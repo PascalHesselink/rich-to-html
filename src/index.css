@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ProseMirror-focused, .ProseMirror-focused:focus {
+    @apply border-none outline-none;
+}
+
+.editor__content, .ProseMirror {
+    @apply h-full;
+}
