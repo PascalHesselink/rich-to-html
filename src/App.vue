@@ -4,8 +4,8 @@
             <span>Richtext to HTML</span>
         </div>
         <div class="flex flex-col flex-1 bg-gray-100">
-            <Editor v-model="content" @updateContent="updateContent" class="h-full p-4 overflow-y-scroll" style="height:50%;"/>
-            <textarea v-model="content" @keyup="updateContent" class="focus:outline-none p-4 border-t-4 border-blue-500 bg-transparent" style="height:50%;resize:none;"/>
+            <Editor v-model="content" @updateContent="updateContent" class="h-full p-4 overflow-y-scroll flex flex-shrink-0" style="height:50%;"/>
+            <textarea v-model="content" @keyup="updateContent" class="focus:outline-none p-4 border-t-4 border-blue-500 bg-transparent flex flex-shrink-0" style="height:50%;resize:none;"/>
         </div>
     </div>
 </template>
@@ -22,7 +22,10 @@
             Hi there,
           </h2>
           <p>
-            this is a very <em>basic</em> example of tiptap.
+            this is a very <em>basic</em> example of the html converter.
+          </p>
+          <p>
+            you can convert from both ways
           </p>
           <pre><code>body { display: none; }</code></pre>
           <ul>
@@ -36,7 +39,7 @@
           <blockquote>
             It's amazing 👏
             <br />
-            – mom
+            – Pascal Hesselink
           </blockquote>
         `,
             }
